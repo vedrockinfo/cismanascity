@@ -2532,7 +2532,10 @@ section.marq-section {
       width: 100%; }
     @media only screen and (max-width: 575px) {
       .news-grid .news-box__content {
-        padding: 27px 20px 26px; } }
+        padding: 27px 20px 26px;
+        text-align: center; }
+        .news-grid .news-box__content p {
+          text-align: left; } }
     .news-grid .news-box__content .content-para {
       margin-top: 1rem; }
     .news-grid .news-box__content .date {
@@ -2568,6 +2571,11 @@ section.marq-section {
       .news-grid .news-box__content a:hover {
         color: #ffffff;
         background: #19649c; }
+
+.news-grid .heading-fourth {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase; }
 
 .other-features .row {
   row-gap: 2rem; }
