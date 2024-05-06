@@ -1,0 +1,742 @@
+.contact-form-area{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+            border: 1px solid $colorBlack;
+            border-radius: 10px;
+    padding: 25px;
+    display: inline-block;
+    width: 100%;
+    @include respond(phone-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: 300;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &:focus{
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+    &:hover, &:focus{
+    background-color: transparent;
+    color: $colorBlack;
+}
+}
+}
+.online-fees{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+            border: 1px solid $colorBlack;
+            border-radius: 10px;
+    padding: 25px;
+    display: inline-block;
+    width: 100%;
+    @include respond(phone-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: normal;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &:focus{
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+    &:hover, &:focus{
+    background-color: transparent;
+    color: $colorBlack
+}
+}
+}
+.registration-form{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+            border: 1px solid $colorBlack;
+            border-radius: 10px;
+    padding: 25px;
+    @include respond (tab-land-after){
+        display: block;
+    width: calc(100% - 3rem);
+    margin: auto;
+    }
+    @include respond(tab-land-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: normal;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &:focus{
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+    &:hover, &:focus{
+    background-color: transparent;
+    color: $colorBlack
+}
+}
+}
+
+.admission-form{
+    background: $colorWhite;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+            border-radius: 2rem;
+    padding: 25px;
+    @include respond (tab-land-after){
+        display: block;
+    width: calc(100% - 3rem);
+    margin: auto;
+    }
+    @include respond(tab-land-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select, input[type=number]{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]::-moz-number-spin-box {
+    display: none;
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: normal;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+.gender{
+        margin-top: 2rem;
+        input[type="radio"]{
+            position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                &:checked{
+                    & + label{
+                        background: $colorBgBlue;
+                        color: $colorWhite;
+                    }
+                }
+            & + label{
+                color: $colorBgBlue;
+                padding: 6px 15px;
+                border-radius: 30px;
+                border: 1px solid $colorBgBlue;
+                background: transparent;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+        }
+        label{
+            color: $colorBlack;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.student-registration-form{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+    .gender{
+        display: flex;
+        align-items: flex-end;
+        gap: 3rem;
+        input[type="radio"]{
+            position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                &:checked{
+                    & + label{
+                        background: $colorBgBlue;
+                        color: $colorWhite;
+                    }
+                }
+            & + label{
+                color: $colorBgBlue;
+                padding: 6px 15px;
+                border-radius: 30px;
+                border: 1px solid $colorBgBlue;
+                background: transparent;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+        }
+        label{
+            color: $colorBlack;
+            padding-bottom: 1rem;
+        }
+    }
+        .form-items {
+            border: 1px solid $colorBlack;
+            border-radius: 10px;
+    padding: 25px;
+    @include respond (tab-land-after){
+        display: block;
+    width: calc(100% - 3rem);
+    margin: auto;
+    }
+    @include respond(tab-land-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: normal;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &:focus{
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+    &:hover, &:focus{
+    background-color: transparent;
+    color: $colorBlack
+}
+}
+}
+
+.fee-collection-form{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+    @include respond (tab-land-after){
+        display: block;
+    width: calc(100% - 3rem);
+    margin: auto;
+    }
+    @include respond(tab-land-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+h3 {
+    color: $colorBgBlue;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include respond (phone-before){
+        font-size: 18px;
+    }
+}
+h3.form-title {
+    margin-bottom: 30px;
+}
+p {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorBlack;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorBlack;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+}
+textarea {
+    position: static !important;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+    font-size: 15px;
+    font-weight: normal;
+    color: $colorBlack;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+    
+    margin-top: 16px;
+    &:focus{
+        border-bottom: 1px solid $colorBgBlue;
+        &::placeholder{
+            color: $colorBgBlue;
+        }
+    }
+    &:hover, &:focus{
+    background-color: transparent;
+    color: $colorBlack
+}
+}
+}
+
+.transfer-certificate form{
+    @include respond (tab-port-before){
+        margin-top: 3rem;
+    }
+        .form-items {
+            border: 1px solid $colorWhite;
+            border-radius: 10px;
+    padding: 25px;
+    @include respond (tab-land-after){
+        display: block;
+    width: calc(100% - 3rem);
+    margin: auto;
+    }
+    @include respond(tab-land-before){
+      min-width: 80%;
+    }
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+button{
+    font-weight: 700!important;
+}
+label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $colorWhite;
+    font-size: 1.6rem;
+}
+select option{
+    color: $colorBgBlue;
+    font-weight: 700;
+}
+select{
+  color: #FFFFFF!important;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") right .75rem center/8px 10px no-repeat!important;
+}
+input[type=text], select{
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorWhite;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    color: $colorWhite;
+    @include respond (phone-before){
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $colorWhite;
+    }
+    &:focus{
+        box-shadow: none!important;
+        border-bottom: 1px solid $colorWhite;
+        &::placeholder{
+            color: $colorWhite;
+        }
+    }
+}
+}

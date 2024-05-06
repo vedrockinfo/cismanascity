@@ -1,0 +1,38 @@
+@import "./abstract/function";
+@import "./abstract/mixins";
+@import "./abstract/responsive";
+@import "./abstract/varaiables";
+
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/button";
+@import "./components/cards";
+@import "./components/hero-form";
+@import "./components/testimonial";
+@import "./components/welcomePopup";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/sidebar";
+
+@import "./pages/aboutUs";
+@import "./pages/admissions";
+@import "./pages/azadi";
+@import "./pages/campuses";
+@import "./pages/career";
+@import "./pages/contact";
+@import "./pages/discloser";
+@import "./pages/feesCollection";
+@import "./pages/gallery";
+@import "./pages/home";
+@import "./pages/news";
+@import "./pages/other-feature";
+@import "./pages/our-infrastructure";
+@import "./pages/prospectus";
+@import "./pages/registration";
+@import "./pages/rules-regulation";
+@import "./pages/sitemap";
+@import "./pages/ways-20";

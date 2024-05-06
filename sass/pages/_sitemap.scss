@@ -1,0 +1,109 @@
+.sitemap{
+    h4{
+        background: $colorBgBlue;
+        color: $colorWhite;
+        padding: 15px 0;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+    ul{
+        list-style-type: none;
+                margin: 0 ;
+                padding: 0;
+                position: relative;
+                &::before{
+                    content: "";
+        background-image: url(../images/sitemap-list-01.png);
+        position: absolute;
+    left: 50%;
+    top: 0;
+    width: 3rem;
+    background-size: contain;
+    height: 3rem;
+    transform: rotate(90deg) translateX(-100%) translateY(50%);
+    background-repeat: no-repeat;
+                }
+        li{
+            line-height: 16px;
+                    padding: 0;
+                    font-weight: 700;
+                    font-size: 14px;
+                    width: calc(100% - 10rem);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    &:first-child{
+        &::after{
+            transform: scale(0);
+        }
+    }
+    &:nth-child(2){
+        &::after{
+            top: -27px;
+        }
+    }
+    &::before{
+        content: "";
+        background-image: url(../images/sitemap-list-01.png);
+        position: absolute;
+    left: -4rem;
+    top: 50%;
+    width: 3rem;
+    background-size: contain;
+    height: 5rem;
+    transform: translateY(-30%);
+    background-repeat: no-repeat;
+    }
+    &::after{
+        content: "";
+        background: #4b4b4d;
+        position: absolute;
+    left: -4rem;
+    width: 1px;
+    height: 100%;
+    top: -34px;
+    transform: scaleY(1.5);
+    }
+                    &:not(:last-child){
+                        a{
+                            margin-bottom: 15px;
+                        }
+                    }
+            a{
+                width: 100%;
+                padding: 15px 10px;
+                text-align: center;
+                display: block;
+                transition-duration: 0.3s;
+                text-decoration: none;
+                color: $colorBlack;
+                background: rgba($colorBgBlue, $alpha: 0.3);
+                &:hover{
+                    color: $colorBlack;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+            
+            
+            
+
+                
+
+            
+
+                
+
+                    
+
+                        
+                        .video-gallery{
+                            .row{
+                                row-gap: 15px;
+                                iframe{
+                                    height: 22rem;
+                                }
+                            }
+                        }

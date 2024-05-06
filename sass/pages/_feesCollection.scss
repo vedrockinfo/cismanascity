@@ -1,0 +1,58 @@
+.fee-collection{
+    .container{
+        .registration-grid{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            @include respond (tab-port-after){
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                align-items: center;
+                .left-side{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    height: 100%;
+                    width: 100%;
+                    padding: 5rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 2rem 0rem 0rem 2rem;
+                    position: relative;
+                }
+                .right-side{
+                    grid-column-start: 3;
+                    grid-column-end: 7;
+                    background: $colorWhite;
+                    padding: 5rem;
+                    border-radius: 0 2rem 2rem 0;
+                }
+            }
+        }
+    }
+.cis-info{
+    .logo {
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 0 140px 0px 0px;
+}
+}
+.cis-info-content{
+    margin-top: 4rem;
+    padding: 1rem;
+    border: 1px solid $colorBlack;
+    border-radius: 1rem;
+    h6{
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 25px;
+    }
+    li{
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 25px;
+        color: $colorBlack;
+        font-family: "Montserrat", sans-serif !important;
+        
+    }
+}
+
+}

@@ -1,0 +1,38 @@
+.basic-table{
+    &:not(:first-child){
+        margin-top: 5rem;
+    }
+    table{
+        tbody{
+            tr:first-child{
+                background: $colorBgBlue;
+            }
+            a{
+                color: $colorBgBlue;
+                text-decoration: underline;
+            }
+          img{
+            height: 178px;
+            width: 100%;
+          overflow: hidden;
+            object-fit: cover;
+            object-position: top;
+            transition: all 0.5s;
+          }
+          &:hover{
+            img{
+              object-position: bottom;
+            }
+          }
+            th{
+        text-align: center;
+        h2{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: $colorWhite;
+        }
+    }
+        }
+    }
+}

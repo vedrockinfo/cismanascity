@@ -1,0 +1,97 @@
+.campus-list {
+    .campus-table {
+    table{
+            color: rgba($colorNavyBlue, $alpha: 1);
+            span.beoynd {
+    text-transform: capitalize;
+    position: relative;
+    left: -5rem;
+    th {
+    text-transform: capitalize;
+}
+}
+            
+            @include respond (tab-land-before){
+                font-size: 1.4rem;
+            }
+            tbody{
+                padding: 0 1rem;
+                tr{
+                    transition: all 0.5s;
+                    &:hover{
+                        background: rgba($colorNavyBlue, $alpha: 0.05);
+                    }
+                }
+                td{
+                    width: 50%;
+                    vertical-align: middle;
+                    font-weight: 600;
+                    i{
+                        font-size: 15px;
+                        color: $colorNavyBlue;
+                    }
+                    a{
+                        color: $colorNavyBlue;
+                        font-size: 16px;
+                        display: inline-block;
+                        &.active{
+                            position: relative;
+                            &::after{
+                                content: "visit";
+                                position: absolute;
+                                top: 0;
+                                right: -60px;
+                                font-size: 8px;
+                                line-height: 1;
+                                background: #cc3539;
+                                color: #fff;
+                                text-transform: uppercase;
+                                padding: 3px 6px;
+                            }
+                        }
+                        @media screen and (max-width:992px) {
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                    }
+                    &:nth-child(2){
+                        border-left: 1px solid #dee2e6;
+                        border-right: 1px solid #dee2e6;
+                    }
+                }
+            }
+            thead{
+                background: rgba($colorNavyBlue, $alpha: 1);
+                th{
+                    width: 50%;
+                    color: rgba($colorWhite, $alpha: 1);
+                    text-transform: capitalize;
+                }
+            }
+            span.brnch {
+                display: block;
+                font-size: 12px;
+                width: max-content;
+                padding: 2px 8px;
+                position: relative;
+                font-style: italic;
+                border-left: 2px solid;
+                border-right: 2px solid;
+                border-radius: 30px;
+                line-height: 1.2;
+                font-weight: normal;
+            }
+            b {
+    font-weight: 100;
+}
+            @media screen and (max-width:600px) {
+                .num{
+                    display: block;
+                }
+                b {
+    display: none;
+}
+            }
+        }
+}
+}
