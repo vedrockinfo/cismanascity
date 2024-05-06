@@ -1,0 +1,47 @@
+.infrastructure-area{
+    h2{
+        @media screen and (min-width:992px) {
+            text-align: left;
+        }
+    }
+    .infrastructure-grid{
+        display: flex;
+        @media screen and (max-width:768px) {
+            flex-direction: column-reverse;
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+        
+        .infrastructure-grid-item{
+            @media screen and (min-width:768px) {
+                flex:0 0 50%;
+            max-width: 50%;
+            &:last-child{
+                padding-left: 2rem;
+            }
+            }
+            &:first-child{
+                margin-left: auto;
+                @media screen and (min-width:768px) {
+                    max-width: 360px;
+                }
+                @media screen and (min-width:992px) {
+                    max-width: 480px;
+                }
+                 @media screen and (min-width:1200px) {
+                    max-width: 570px;
+                }
+                @media screen and (min-width:1400px) {
+                    max-width: 660px;
+                }
+            }
+        }
+        .owl-nav {
+    @media screen and (min-width:768px) {
+        position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+}
+    }
+}
